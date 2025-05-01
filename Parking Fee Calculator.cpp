@@ -11,6 +11,12 @@ int main()
 
 	//Variables
 	int entryHour, entryMin, exitHour, exitMin;
+
+	//Input
+	cout << "Enter the entry time (HH MM): \n";
+	cin >> entryHour >> entryMin;
+	cout << "Enter the exit time (HH MM): \n";
+	cin >> exitHour >> exitMin;
     
 
     return 0;
