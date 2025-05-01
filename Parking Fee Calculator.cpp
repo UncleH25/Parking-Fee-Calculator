@@ -30,5 +30,15 @@ int main()
 	//Variable for entire fee
 	double totalFee = feeForFullHours + feeForHalfHour;
 
+	//Output
+	cout << fixed << setprecision(2);
+	cout << "\n--- Parking Receipt ---\n";
+	cout << "Entry Time: " << entryHour << ":" << setw(2) << setfill('0') << entryMin << endl;
+	cout << "Exit Time: " << exitHour << ":" << setw(2) << setfill('0') << exitMin << endl;
+	cout << "Total Time Parked: " << totalHours << " hours and " << totalMinutes << " minutes\n";
+	cout << "Total Fee: R" << totalFee << endl;
+	cout << "------------------------\n";
+	cout << "Thank you for using our parking service!\n";
+
     return 0;
 }
