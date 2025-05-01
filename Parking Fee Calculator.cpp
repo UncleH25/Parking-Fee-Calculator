@@ -23,5 +23,12 @@ int main()
 	int totalHours = totalTimeParked / 60;
 	int totalMinutes = totalTimeParked % 60;
 
+	//Calculating the hourly fee
+	double feeForFullHours = totalHours * HOURLY_RATE;
+	double feeForHalfHour = totalMinutes * HALF_HOURLY_RATE;
+
+	//Variable for entire fee
+	double totalFee = feeForFullHours + feeForHalfHour;
+
     return 0;
 }
