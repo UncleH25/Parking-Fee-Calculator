@@ -19,7 +19,9 @@ int main()
 	cin >> exitHour >> exitMin;
 
 	//Calculating the total time in minutes
-	int totalTime = (exitHour * 60 + exitMin) - (entryHour * 60 + entryMin);
+	int totalTimeParked = (exitHour * 60 + exitMin) - (entryHour * 60 + entryMin);
+	int totalHours = totalTimeParked / 60;
+	int totalMinutes = totalTimeParked % 60;
 
     return 0;
 }
