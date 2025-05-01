@@ -17,7 +17,9 @@ int main()
 	cin >> entryHour >> entryMin;
 	cout << "Enter the exit time (HH MM): \n";
 	cin >> exitHour >> exitMin;
-    
+
+	//Calculating the total time in minutes
+	int totalTime = (exitHour * 60 + exitMin) - (entryHour * 60 + entryMin);
 
     return 0;
 }
